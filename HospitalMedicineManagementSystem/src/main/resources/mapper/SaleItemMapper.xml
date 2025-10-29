@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dxr.hospitalmedicinemanagementsystem.mapper.SaleItemMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.dxr.hospitalmedicinemanagementsystem.entity.SaleItem">
+        <id column="item_id" property="itemId" />
+        <result column="order_id" property="orderId" />
+        <result column="medicine_id" property="medicineId" />
+        <result column="batch_number" property="batchNumber" />
+        <result column="quantity" property="quantity" />
+        <result column="unit_price" property="unitPrice" />
+        <result column="deleted" property="deleted" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        item_id, order_id, medicine_id, batch_number, quantity, unit_price, deleted
+    </sql>
+
+</mapper>

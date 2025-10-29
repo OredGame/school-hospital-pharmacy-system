@@ -1,4 +1,9 @@
 package com.dxr.hospitalmedicinemanagementsystem.mapper;
 
-public interface UserMapper {
+
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.dxr.hospitalmedicinemanagementsystem.entity.User;
+
+public interface UserMapper extends BaseMapper<User> {
+
 }

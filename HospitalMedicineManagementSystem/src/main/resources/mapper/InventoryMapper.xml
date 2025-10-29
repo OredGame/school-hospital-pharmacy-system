@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dxr.hospitalmedicinemanagementsystem.mapper.InventoryMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.dxr.hospitalmedicinemanagementsystem.entity.Inventory">
+        <id column="inventory_id" property="inventoryId" />
+        <result column="medicine_id" property="medicineId" />
+        <result column="batch_number" property="batchNumber" />
+        <result column="expiration_date" property="expirationDate" />
+        <result column="quantity" property="quantity" />
+        <result column="version" property="version" />
+        <result column="deleted" property="deleted" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        inventory_id, medicine_id, batch_number, expiration_date, quantity, version, deleted
+    </sql>
+
+</mapper>
